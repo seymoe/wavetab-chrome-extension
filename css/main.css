@@ -1,0 +1,148 @@
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	font-family: "arial", "helvetica", "sans-serif";
+}
+.wrapper{
+	height: inherit;
+	width:inherit;
+	background: rgb(119,117,169);
+	position: relative;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+	flex-direction: column;
+	
+	-webkit-box-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+	justify-content: center;
+	align-items: center;
+}
+/*中间引用部分样式*/
+.quote-wrap{
+	width:800px;
+	height:auto;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+	padding:25px;
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,.9);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e5000000,endColorstr=#e5000000); 
+	border-radius: 5px;
+	z-index: 5;
+	text-align: center;
+}
+.quote-box{
+	height:auto;
+	width:100%;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+	padding:10px 15px;
+	overflow: hidden;
+}
+.quote-content{
+  margin-bottom: 15px;
+	text-align: center;
+}
+i.icon-quote-left{
+	float:left;
+	font-size:35px;
+	color:rgb(119,117,169);
+	margin-right:10px;
+}
+.quote-text{
+	font-size:35px;
+	line-height: 35px;
+	color:rgb(119,117,169);
+}
+.quote-author{
+	display: block;
+	height:40px;
+	line-height:40px;
+	font-size:20px;
+	/*color:rgb(119,117,169);*/
+	float:right;
+}
+.quote-control{
+	height:50px;
+	width:100%;
+	margin-top:20px;
+}
+.quote-control a.icon-heart{
+	font-size: 40px;
+	line-height: 60px;
+	height:inherit;
+	/*color:rgb(119,117,169);*/
+	display: block;
+	float:left;
+	margin-left:15px;
+}
+.quote-control button{
+	width:120px;
+	height:40px;
+	border:none;
+	border-radius: 8px;
+	outline: none;
+	/*background-color: rgb(119,117,169);*/
+	color:rgb(255,255,255);
+	font-size: 20px;
+	float:right;
+	margin:10px 15px;
+	cursor: pointer;
+}
+
+.quote-control button:hover,a.icon-heart:hover,.side-control .icon-volume-up:hover,.side-control .icon-github:hover,.side-control .icon-home:hover{
+	opacity: .8;
+}
+
+.copyright{
+	width:600px;
+	height:auto;
+	text-align: center;
+	z-index:3;
+}
+.copyright h1{
+	margin:30px 0 10px 0;
+	color:rgb(255,255,255);
+}
+.copyright p{
+	margin:0;
+	color: rgb(255,255,255);
+}
+.copyright p a{
+	color: #fff;
+}
+
+/*侧边*/
+.side-control{
+	width:50px;
+	height:auto;
+	position: absolute;
+	right:30px;
+	top:30px;
+	text-align: center;
+	padding:10px 5px;
+	border-radius:8px;
+	z-index:5;
+}
+
+.side-control .icon-volume-up,.side-control .icon-volume-off,.side-control .icon-github,.side-control .icon-home{
+	display: block;
+	width:inherit;
+	height: 50px;
+	line-height: 50px;
+	font-size: 40px;
+	margin-bottom: 15px;
+	color:rgb(255,255,255);
+}
